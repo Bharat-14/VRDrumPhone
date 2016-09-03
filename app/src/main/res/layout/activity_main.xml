@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <bharatd.example.com.vrattempt.MainImage
+        android:id="@+id/miGraph"
+        android:layout_above="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btStartStop"
+            android:background="@drawable/btplay128"
+            android:layout_width="64dp"
+            android:layout_height="64dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/xbRecord"
+                android:text="Record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/xbVisual"
+                android:text="Visualize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/xbAccel"
+                android:text="Acceleration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/xbGyros"
+                android:text="Gyroscope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/xbGravity"
+                android:text="Gravity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/xbMagnet"
+                android:text="Magnetfield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvStatus"
+            android:text="Stopped"
+            android:maxLines="100"
+            android:scrollbars="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>
